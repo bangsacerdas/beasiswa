@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang = "en">
+   
+   <head>
+      <meta charset = "utf-8">
+      <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
+      <meta name = "viewport" content = "width = device-width,initial-scale = 1">
+      
+      <title>Bootstrap Scrollspy</title>
+      
+      <!-- Bootstrap -->
+      <link href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" 
+         rel = "stylesheet">
+      
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 
+         elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the 
+         page via file:// -->
+      
+      <!--[if lt IE 9]>
+      <script src = "https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src = "https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      
+   </head>
+   
+   <body>
+
+<nav id = "myScrollspy" class = "navbar navbar-default navbar-static" role = "navigation">
+   
+   <div class = "navbar-header">
+      <button class = "navbar-toggle" type = "button" data-toggle = "collapse" 
+         data-target = ".bs-js-navbar-scrollspy">
+         <span class = "sr-only">Toggle navigation</span>
+         <span class = "icon-bar"></span>
+         <span class = "icon-bar"></span>
+         <span class = "icon-bar"></span>
+      </button>
+		
+      <a class = "navbar-brand" href = "#">Tutorial Name</a>
+   </div>
+   
+   <div class = "collapse navbar-collapse bs-js-navbar-scrollspy">
+      <ul class = "nav navbar-nav">
+         <li class = "active"><a href = "#ios">iOS</a></li>
+         <li><a href = "#svn">SVN</a></li>
+         
+         <li class = "dropdown">
+            <a href = "#" id = "navbarDrop1" class = "dropdown-toggle" data-toggle  = "dropdown">
+               Java 
+               <b class = "caret"></b>
+            </a>
+            
+            <ul class = "dropdown-menu" role = "menu" aria-labelledby = "navbarDrop1">
+               <li><a href = "#jmeter" tabindex = "-1">jmeter</a></li>
+               <li><a href = "#ejb" tabindex = "-1">ejb</a></li>
+               
+               <li class = "divider"></li>
+               <li><a href = "#spring" tabindex = "-1">spring</a></li>
+            </ul>
+            
+         </li>
+      </ul>
+   </div>
+   
+</nav>
+
+<div data-spy = "scroll" data-target = "#myScrollspy" data-offset = "0"  
+   style = "height:200px; overflow:auto; position: relative;">
+   
+   <div class = "section">
+      <h4 id = "ios">iOS
+      </h4>
+      
+      <p>iOS is a mobile operating system developed and distributed by 
+         Apple Inc. Originally released in 2007 for the iPhone, iPod Touch, and 
+         Apple TV. iOS is derived from OS X, with which it shares the Darwin 
+         foundation. iOS is Apple's mobile version of the OS X operating system
+         used on Apple computers.</p>
+		 <br/><br/><br/><br/><br/><br/><br/><br/>
+   </div>
+   
+   <div class = "section">
+      <h4 id = "svn">SVN</h4>
+      <p>Apache Subversion which is often abbreviated as SVN, is a software 
+         versioning and revision control system distributed under an open source 
+         license. Subversion was created by CollabNet Inc. in 2000, but 
+         now it is developed as a project of the Apache Software Foundation, 
+         and as such is part of a rich community of developers and users.</p>
+		 <br/><br/><br/><br/><br/><br/><br/><br/>
+   </div>
+   
+   <div class = "section">
+      <h4 id = "jmeter">jMeter
+      </h4>
+      
+      <p>jMeter is an Open Source testing software. It is 100% pure Java 
+         application for load and performance testing.</p>
+		 <br/><br/><br/><br/><br/><br/><br/><br/>
+   </div>
+   
+   <div class = "section">
+      <h4 id = "ejb">EJB</h4>
+      
+      <p>Enterprise Java Beans (EJB) is a development architecture for 
+         building highly scalable and robust enterprise level applications 
+         to be deployed on J2EE compliant Application Server such as 
+         JBOSS, Web Logic etc.</p>
+		 <br/><br/><br/><br/><br/><br/><br/><br/>
+   </div>
+	
+   <div class = "section">
+      <h4 id = "spring">Spring</h4>
+      
+      <p>Spring framework is an open source Java platform that provides 
+         comprehensive infrastructure support for developing robust Java 
+         applications very easily and very rapidly.</p>
+      
+      <p>Spring framework was initially written by Rod Johnson and was first 
+         released under the Apache 2.0 license in June 2003.</p>
+   </div>
+   
+</div>      
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<script type = "text/javascript">
+   $(function(){
+      $("#myScrollspy").scrollspy();
+   });
+</script>
+      
+   </body>
+</html>

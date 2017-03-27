@@ -1,0 +1,90 @@
+<!Doctype html>
+<html>
+    <head> 
+        <meta charset="utf-8"/>
+        <title> Intro HTML </title>
+        <link href="https://fonts.googleapis.com/css?family=Baloo|Oswald" rel="stylesheet">
+       <style>
+          
+            .background-style{
+
+                /*
+                background-color: blue;
+                background-image:url('image.png');
+                background-repeat: no-repeat;
+                background-position:  left top;
+                background-attachment: fixed;
+                */
+
+                /* css shorthand */
+                background: blue url('image.png') no-repeat left top fixed;
+                padding: 100px;
+            }
+            .border-style{
+                /*
+                border-width: 2px;
+                border-style: dashed;
+                border-color: red;
+                border-top-style: solid;
+                border-top-color: green;*/
+                border: 2px solid #2ABF97;
+                border-top:  2px dashed green;
+            }
+            .font-style{
+                font-style: italic;
+                font-variant: normal;
+                font-weight: bold;
+                font-size: 16px;
+                font-family: 'Baloo', sans-serif;
+
+            }
+            .padding-style{
+                /*
+                padding-top: 10px;
+                padding-right: 20px;
+                padding-bottom: 10px;
+                padding-left: 20px;*/
+                /* padding: 10px 20px 10px 20px; */ /* top right bottom left */
+                /* padding: 30px; */ /* all */
+                padding: 20px 10px 15px; 
+            }
+            .margin-style{
+                margin-top : 10px;
+            }
+            .center{
+                width: 300px;
+                margin: auto;
+                border-style: solid;
+                border-width: 2px;
+                outline-style: solid;
+                outline-color: red;
+                outline-width: 10px;
+            }
+        </style> 
+    </head>
+    <body>
+        <!--  Test  -->
+        <div class="background-style">
+            <p>
+                Lorem ipsum dolor sit amet,consectetur adipiscing elit. Praesent vestibulum dictum libero, id euismod diam efficitur sed. Sed tempor congue nisl, quis aliquet felis scelerisque at. Donec varius velit commodo, commodo leo eu, accumsan urna. Morbi aliquam arcu sed elit accumsan ullamcorper. Suspendisse viverra consectetur neque, ut pellentesque erat bibendum at. Donec ligula ipsum, facilisis non odio eu, malesuada semper leo. Duis et ipsum sapien. 
+            </p>
+        </div>
+        <br/>
+        <h1>  Border </h1>
+        <div class="border-style font-style"> 
+             <p>
+                 Lorem ipsum dolor sit amet,consectetur adipiscing elit. Praesent vestibulum dictum libero, id euismod diam efficitur sed. Sed tempor congue nisl, quis aliquet felis scelerisque at. Donec varius velit commodo, commodo leo eu, accumsan urna. Morbi aliquam arcu sed elit accumsan ullamcorper. Suspendisse viverra consectetur neque, ut pellentesque erat bibendum at. Donec ligula ipsum, facilisis non odio eu, malesuada semper leo. Duis et ipsum sapien. 
+            </p>
+        </div>
+         <div class="border-style font-style padding-style margin-style"> 
+             <p>
+                 Lorem ipsum dolor sit amet,consectetur adipiscing elit. Praesent vestibulum dictum libero, id euismod diam efficitur sed. Sed tempor congue nisl, quis aliquet felis scelerisque at. Donec varius velit commodo, commodo leo eu, accumsan urna. Morbi aliquam arcu sed elit accumsan ullamcorper. Suspendisse viverra consectetur neque, ut pellentesque erat bibendum at. Donec ligula ipsum, facilisis non odio eu, malesuada semper leo. Duis et ipsum sapien. 
+            </p>
+        </div>
+        <div class="center" >
+              <p>
+                 Lorem ipsum dolor sit amet,consectetur adipiscing elit
+            </p>
+        </div>
+    </body>
+</html>

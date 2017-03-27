@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Bootstrap Example</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class = "container" style = "padding: 100px 50px 10px;" >
+   <button type = "button" class = "btn btn-default popover-show" 
+      title = "Popover title" data-container = "body" 
+      data-toggle = "popover" data-placement = "left" 
+      data-content = "Isi catatan pada Popover with show method">
+      
+      Popover di kiri
+   </button>
+   
+   <button type = "button" class = "btn btn-primary popover-hide" 
+      title = "Popover title" data-container = "body" 
+      data-toggle = "popover" data-placement = "top" 
+      data-content = "Isi catatan pada Popover-hide method">
+      
+      Popover di atas
+   </button>
+   
+   <button type = "button" class = "btn btn-success popover-destroy" 
+      title = "Popover title" data-container = "body" 
+      data-toggle = "popover" data-placement = "bottom" 
+      data-content = "Isi catatan pada Popover dengan metode popover-show">
+      
+      Popover di kiri popover-show
+   </button>
+   
+   <button type = "button" class = "btn btn-warning popover-toggle" 
+      title = "Popover title" data-container = "body" 
+      data-toggle = "popover" data-placement = "top" 
+      data-content = "Isi catatan pada Popover dengan metode popover-hide">
+      
+      Popover di atas popover-hide
+   </button>
+	
+   <br><br><br><br><br><br>
+   
+   <p class = "popover-options">
+      <a href = "#" type = "button" class = "btn btn-warning" 
+         title = "<h2>Title</h2>" data-container = "body" 
+         data-toggle = "popover" data-content = "
+         <h4>Isi catatan pada Popover-options method</h4>">
+         
+         Popover option
+      </a>
+   </p>
+   
+   <script>
+      $(function () { $('.popover-show').popover('show');});
+      $(function () { $('.popover-hide').popover('hide');});
+      $(function () { $('.popover-destroy').popover('destroy');});
+      $(function () { $('.popover-toggle').popover('toggle');});
+      $(function () { $(".popover-options a").popover({html : true });});
+	  $(function () { $('.popover-options a').on('shown.bs.popover', function () {
+      alert("Menampilkan pop over terbaru");
+   })});
+   </script>
+	
+</div>
+</body>
+</html>

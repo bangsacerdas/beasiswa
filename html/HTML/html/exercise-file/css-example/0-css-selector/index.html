@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Introduction CSS Selector</title>
+    <style>
+        /* universal Selector */
+        *{
+            margin-top :0px;
+        }
+        /* element Selector */
+        p{
+            color: red;
+        }
+        /* id selector */
+        #para-1{
+            color: rgb(12,142,175);
+        } 
+        /* class selector */
+        .app-text-color {
+            color:  green;
+            font-weight: bold;
+        }
+        .app-text-decoration {
+            text-decoration: underline;
+        }
+        p.center {
+            text-align: right;
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> CSS Introduction </h1> 
+    
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu vestibulum ex. Pellentesque convallis, ex vel vulputate egestas, leo nisi pulvinar mi, sed malesuada risus mauris et nisi. Nulla fermentum dictum convallis. Nullam sed venenatis ex. Nunc a sem pulvinar, cursus felis tristique, sollicitudin massa. Pellentesque dictum quam eu congue pretium. Nulla facilisi. Nulla facilisi. Suspendisse quam nisl, tincidunt nec pretium et, accumsan quis dolor. Cras quis augue consectetur, laoreet ante et, commodo justo. Suspendisse blandit posuere velit quis vulputate. Nulla auctor et velit nec rhoncus. Curabitur rutrum elit eu luctus suscipit. Etiam felis felis, accumsan et dignissim sed, egestas sit amet risus. Vivamus hendrerit nibh eu diam sodales interdum. Phasellus vehicula placerat est, et vulputate nibh aliquet sed.
+    </p>
+    <p class="center">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu vestibulum ex. Pellentesque convallis, ex vel vulputate egestas, leo nisi pulvinar mi, sed malesuada risus mauris et nisi. Nulla fermentum dictum convallis. Nullam sed venenatis ex. Nunc a sem pulvinar, cursus felis tristique, sollicitudin massa. Pellentesque dictum quam eu congue pretium. Nulla facilisi. Nulla facilisi. Suspendisse quam nisl, tincidunt nec pretium et, accumsan quis dolor. Cras quis augue consectetur, laoreet ante et, commodo justo. Suspendisse blandit posuere velit quis vulputate. Nulla auctor et velit nec rhoncus. Curabitur rutrum elit eu luctus suscipit. Etiam felis felis, accumsan et dignissim sed, egestas sit amet risus. Vivamus hendrerit nibh eu diam sodales interdum. Phasellus vehicula placerat est, et vulputate nibh aliquet sed.
+    </p>
+    <p id="para-1">
+        Lorem ipsum dolor sit amet, <span class="app-text-color app-text-decoration"> consectetur adipiscing elit </span>. Fusce eu vestibulum ex. Pellentesque convallis, ex vel vulputate egestas, leo nisi pulvinar mi, sed malesuada risus mauris et nisi. Nulla fermentum dictum convallis. Nullam sed venenatis ex. Nunc a sem pulvinar, cursus felis tristique, sollicitudin massa. Pellentesque dictum quam eu congue pretium. Nulla facilisi. Nulla facilisi. Suspendisse quam nisl, tincidunt nec pretium et, accumsan quis dolor. Cras quis augue consectetur, laoreet ante et, commodo justo. Suspendisse blandit <span class="app-text-color"> posuere velit quis vulputate </span>. Nulla auctor et velit nec rhoncus. Curabitur rutrum elit eu luctus suscipit. Etiam felis felis, accumsan et dignissim sed, egestas sit amet risus. Vivamus hendrerit nibh eu diam sodales interdum. Phasellus vehicula placerat est, et vulputate nibh aliquet sed.
+    </p>
+</body>
+</html>

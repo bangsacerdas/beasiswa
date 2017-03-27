@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Bootstrap Example</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div style = "padding: 100px 100px 10px;">
+   Ini adalah<a href = "#" class = "tooltip-show" data-toggle = "tooltip" 
+      title = "show">Tooltip on method show</a>.
+
+   Ini adalah<a href = "#" class = "tooltip-hide" data-toggle = "tooltip" 
+      data-placement = "left" title = "hide">Tooltip on method hide</a>.
+
+   Ini adalah<a href = "#" class = "tooltip-destroy" data-toggle = "tooltip" 
+      data-placement = "top" title = "destroy">Tooltip on method destroy</a>.
+
+   Ini adalah<a href = "#" class = "tooltip-toggle" data-toggle = "tooltip" 
+      data-placement = "bottom" title = "toggle">Tooltip on method toggle</a>.
+   
+   <br><br><br><br><br><br>
+   
+   <p class = "tooltip-options" >
+      Ini adalah<a href = "#" data-toggle = "tooltip" title = "<h2>'am Header2
+         </h2>">Tooltip on method options</a>.
+   </p>
+
+   <script>
+      $(function () { $('.tooltip-show').tooltip('show');});
+      $(function () { $('.tooltip-hide').tooltip('hide');});
+      $(function () { $('.tooltip-destroy').tooltip('destroy');});
+      $(function () { $('.tooltip-toggle').tooltip('toggle');});
+      $(function () { $(".tooltip-options a").tooltip({html : true });});
+   </script>
+	
+</div>
+
+</body>
+</html>

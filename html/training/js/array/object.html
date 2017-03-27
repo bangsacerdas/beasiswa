@@ -1,0 +1,46 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<script> 
+		  var myObject = new Object(); // Object constructor (try to avoid)
+		  // is the equivalent of:
+		  var myObject = {}; // Object literal (preferred way)
+		  var myObject = {
+			propertyString: "this is a string",
+			propertyAnotherString: "this is another string",
+			propertyMixedArray: ["item 1", "item 2", 1, 2, {}],
+			// Note above, we have different data types in the array:
+			// two strings, two ints/numbers and one empty object.
+			// This is completely legal in javascript.
+			propertyObject: { someProperty: "and so on..." }
+		  };
+		  // Adding additional properties is OK too.
+		  // Note: this time we use "=" instead of ":" to assign value
+		  myObject.additionalProperty = "Additional property";
+		 
+		  // prints "this is a string"
+		  document.write(myObject.propertyString);
+		 
+		  // also prints "this is a string"
+		  // I'm treating object as an associative array or hashtable
+		  document.write(myObject["propertyString"]);
+		 
+		  // also prints "this is a string"
+		  // we can use variables as well to dynamically access keys.
+		  var keyFromVariable = "propertyString";
+		  document.write(myObject[keyFromVariable]);
+		 
+		  // Couple of other examples.
+		  document.write(myObject.propertyMixedArray[1]); // prints "item 2"
+		  document.write(myObject.propertyObject.someProperty); // prints "and so on..."
+		  document.write(myObject.additionalProperty); // prints "Additional property"
+		  var newObj = {
+			foo: "here be dragons",
+			bar: "foo is a lie"
+		  };
+		  delete newObj.bar; // is the equivalent of delete newObj['bar'];
+		  document.write(newObj); // prints Object {foo: "here be dragons"}
+		</script>
+	</body>
+</html>

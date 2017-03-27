@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text Input Control</title>
+</head>
+<body>
+    <!---https://www.wufoo.com/html5/ -->
+	<form method="POST" action="validate.php">
+        <fieldset>
+        <legend> Personal Data </legend>
+            <label for="first_name"> First name: </label>  
+            <input type="text" name="first_name" />
+            <br/>
+            <label for=last_name> Last name: </label>  
+            <input type="text" name="last_name" />
+            <br/>
+            <label for=email> Email </label>
+            <input type="email" multiple=true>
+            <br/>
+            <label for="password"> Password: </label>  
+            <input type="password" name="password" />
+            <br/>
+            <label for="Address"> Address: </label>  
+            <textarea rows="5" cols="50" name="Address">
+            </textarea>
+            <br/>
+            <label for="subject"> subject: </label>  
+            <input type="checkbox" name="subject" value="maths"> Maths
+            <input type="checkbox" name="subject" value="physics" checked> Physics
+            <br/>
+            <label for="gender"> gender: </label> 
+            <input type="radio" name="gender" value="maths"> Male
+            <input type="radio" name="gender" value="physics" checked> Women
+            <br/>
+            <label for="city"> City: </label> 
+            <select name="city">
+                <option value="jakarta">Jakarta</option>
+                <option value="bandung">Bandung</option>
+            </select>
+            <br/>
+            <label for="browsers"> Browser you Used: </label> 
+            <input list="browsers" name="browsers"/>
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+            <br/>
+            <label for="photo"> Photo: </label> 
+            <!-- accept audio/*, video/*, image/*, -->
+            <input type="file" name="photo" accept="image/*"  multiple=true/>
+            <input type="hidden" name="value" value="10" />
+        </fieldset>
+		<br/>
+		<input type="submit" name="submit" value="Submit" />
+		<input type="reset" name="reset"  value="Reset" />
+		<input type="button" name="ok" value="OK"  /> 
+	</form>
+</body>
+</html>

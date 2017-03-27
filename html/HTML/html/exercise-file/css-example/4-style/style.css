@@ -1,0 +1,37 @@
+a {
+    color : blue;
+    text-decoration: none;
+}
+a:hover{
+    color : red;
+    text-decoration:none;
+}
+a:visited{
+    color : green;
+    text-decoration:none;
+}
+a:active{
+     color : blueviolet;
+    text-decoration:none;
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu  > ul > li {
+    color :blue;
+    text-decoration: none;
+}
+.menu li > ul > li {
+    color: red;
+    list-style-type: circle;
+    text-decoration: underline;
+}
+.rounded p{
+    width: 200px;
+    text-align: center;
+    padding: 50px 0px; 
+    border-radius: 50px;
+    background: linear-gradient(to bottom right, red, yellow);
+   /*border-top-left-radius: 20px; */
+
+}

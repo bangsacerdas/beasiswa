@@ -1,0 +1,1 @@
+alert("Skrip Diluar HTML");

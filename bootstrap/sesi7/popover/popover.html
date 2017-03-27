@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Bootstrap Example</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class = "container" style = "padding: 100px 50px 10px;" >
+   <button type = "button" class = "btn btn-default" title = "Popover title"  
+      data-container = "body" data-toggle = "popover" data-placement = "left" 
+      data-content = "Isi catatan pada Popover di kiri">
+      
+      Popover di kiri
+   </button>
+   
+   <button type = "button" class = "btn btn-primary" title = "Popover title"  
+      data-container = "body" data-toggle = "popover" data-placement = "top" 
+      data-content = "Isi catatan pada Popover di atas">
+      
+      Popover di atas
+   </button>
+   
+   <button type = "button" class = "btn btn-success" title = "Popover title"  
+      data-container = "body" data-toggle = "popover" data-placement = "bottom" 
+      data-content = "Isi catatan pada Popover di bawah">
+      
+      Popover di bawah
+   </button>
+   
+   <button type = "button" class = "btn btn-warning" title = "Popover title"  
+      data-container = "body" data-toggle = "popover" data-placement = "right" 
+      data-content = "Isi catatan pada Popover di kanan">
+      
+      Popover di kanan
+   </button>
+   
+</div>
+
+<script>
+   $(function (){
+      $("[data-toggle = 'popover']").popover();
+   });
+</script>
+</body>
+</html>

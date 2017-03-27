@@ -1,0 +1,35 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<script> 
+		  var testArr = [1, 4, 3, 0, "sticks", 3, "foo"];
+		  // Check if there is at least one instance of number 3 in testArr;
+		  var i = testArr.indexOf(3); // value of i will be 2 as that is where the first instance of number 3 is located
+		  var nope = testArr.indexOf("jetpack"); // value of nope will be -1 since testArr doesn't contain a string "jetpack"
+		  // Note: testArr.indexOf(value) will return an integer between 0 and (testArr.length-1) if value exists
+		  // or -1 if value is not found in the array.
+		 
+		  // This will print 'Woo hoo!' since 3 is in testArr;
+		  if (i != -1) {
+			document.write('Woo hoo!');
+		  } else {
+			document.write('Bummer!');
+		  }
+		 
+		  // Alternatively to checking if (i > -1) or if (i != -1),
+		  // we could have done (I personally prefer this approach):
+		  if (~i) { // This is (~) tilda, NOT (-) dash/minus
+			document.write('Woo hoo!');
+		  } else {
+			document.write('Bummer!');
+		  }
+		  // or
+		  if (~testArr.indexOf(3)) { // This is (~) tilda, NOT (-) dash/minus
+			document.write('Woo hoo!');
+		  } else {
+			document.write('Bummer!');
+		  }
+		</script>
+	</body>
+</html>

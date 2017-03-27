@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Bootstrap Example</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<h4>Tooltip examples for anchors</h4>
+
+Ini adalah<a href = "#" class = "tooltip-test" data-toggle = "tooltip" 
+   title = "Tooltip on left"> Default Tooltip</a>.
+
+Ini adalah<a href = "#" class = "tooltip-test" data-toggle = "tooltip" 
+   data-placement = "left" title = "Tooltip on left">Tooltip on Left</a>.
+
+Ini adalah<a href = "#" data-toggle = "tooltip" data-placement = "top" 
+   title = "Tooltip on top">Tooltip on Top</a>.
+
+Ini adalah<a href = "#" data-toggle = "tooltip" data-placement = "bottom"
+   title = "Tooltip on bottom">Tooltip on Bottom</a>.
+
+Ini adalah<a href = "#" data-toggle = "tooltip" data-placement = "right" 
+   title = "Tooltip on right">Tooltip on Right</a>
+	
+<br>
+
+<h4>Tooltip examples for buttons</h4>
+
+<button type = "button" class = "btn btn-default" data-toggle = "tooltip" title = "Tooltip on left">
+   Default Tooltip
+</button>
+
+<button type = "button" class = "btn btn-default" data-toggle = "tooltip" 
+   data-placement = "left" title = "Tooltip on left">
+	
+   Tooltip on left
+</button>
+
+<button type = "button" class = "btn btn-default" data-toggle = "tooltip" 
+   data-placement = "top" title = "Tooltip on top">
+   
+   Tooltip on top
+</button>
+
+<button type = "button" class = "btn btn-default" data-toggle = "tooltip" 
+   data-placement = "bottom" title = "Tooltip on bottom">
+   
+   Tooltip on bottom
+</button>
+
+<button type = " button" class = " btn btn-default" data-toggle = "tooltip" 
+   data-placement = "right" title = "Tooltip on right">
+   
+   Tooltip on right
+</button>
+
+<script>
+   $(function () { $("[data-toggle = 'tooltip']").tooltip(); });
+</script>
+
+</body>
+</html>

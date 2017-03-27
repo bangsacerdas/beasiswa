@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang = "en">
+   
+   <head>
+      <meta charset = "utf-8">
+      <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
+      <meta name = "viewport" content = "width = device-width,initial-scale = 1">
+      
+      <title>Bootstrap Form</title>
+      
+      <!-- Bootstrap -->
+      <link href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" 
+         rel = "stylesheet">
+      
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 
+         elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the 
+         page via file:// -->
+      
+      <!--[if lt IE 9]>
+      <script src = "https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src = "https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      
+   </head>
+   
+   <body>
+	  <div class="container">
+		<div class="row">
+			<h1>Form Biasa</h1>
+			<form role = "form">
+			   <div class = "form-group">
+				  <label for = "name">Name</label>
+				  <input type = "text" class = "form-control" id = "name" placeholder = "Enter Name">
+			   </div>
+			   
+			   <div class = "form-group">
+				  <label for = "inputfile">File input</label>
+				  <input type = "file" id = "inputfile">
+				  <p class = "help-block">Example block-level help text here.</p>
+			   </div>
+			   
+			   <div class = "checkbox">
+				  <label><input type = "checkbox"> Check me out</label>
+			   </div>
+			   
+			   <button type = "submit" class = "btn btn-default">Submit</button>
+			</form>
+		</div>
+		<div class="row">
+			<h1>Form Segaris</h1>
+			<form class = "form-inline" role = "form">
+			   
+			   <div class = "form-group">
+				  <label class = "sr-only" for = "name">Name</label>
+				  <input type = "text" class = "form-control" id = "name" placeholder = "Enter Name">
+			   </div>
+			   
+			   <div class = "form-group">
+				  <label class = "sr-only" for = "inputfile">File input</label>
+				  <input type = "file" id = "inputfile">
+			   </div>
+			   
+			   <div class = "checkbox">
+				  <label><input type = "checkbox"> Check me out</label>
+			   </div>
+			   
+			   <button type = "submit" class = "btn btn-default">Submit</button>
+			</form>
+		</div>
+		<div class="row">
+			<h1>Form Horizontal</h1>
+			<form class = "form-horizontal" role = "form">   
+			   <div class = "form-group">
+				  <label for = "firstname" class = "col-sm-2 control-label">First Name</label>
+					
+				  <div class = "col-sm-10">
+					 <input type = "text" class = "form-control" id = "firstname" placeholder = "Enter First Name">
+				  </div>
+			   </div>
+			   
+			   <div class = "form-group">
+				  <label for = "lastname" class = "col-sm-2 control-label">Last Name</label>
+					
+				  <div class = "col-sm-10">
+					 <input type = "text" class = "form-control" id = "lastname" placeholder = "Enter Last Name">
+				  </div>
+			   </div>
+			   
+			   <div class = "form-group">
+				  <div class = "col-sm-offset-2 col-sm-10">
+					 <div class = "checkbox">
+						<label><input type = "checkbox"> Remember me</label>
+					 </div>
+				  </div>
+			   </div>
+			   
+			   <div class = "form-group">
+				  <div class = "col-sm-offset-2 col-sm-10">
+					 <button type = "submit" class = "btn btn-default">Sign in</button>
+				  </div>
+			   </div>
+				
+			</form>
+		</div>
+		
+	  </div>
+      
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+      
+   </body>
+</html>

@@ -1,0 +1,27 @@
+.header  p{
+    color: blue;
+}
+.layout p:first-line {
+    color: red;
+    font-size: 20px;   
+}
+/*.layout2 p:first-child{
+    color: blue ;
+    font-style: italic;
+}
+.layout2 p:last-child{
+    color: brown ;
+    text-decoration: underline;
+}*/
+
+.layout2 p:before{
+    content: "test before-";
+    color :blue;
+}
+.layout2 p:after{
+    content: "-test after";
+    color :blue;
+}
+.layout3 p:nth-child(odd){
+    color :red;
+}

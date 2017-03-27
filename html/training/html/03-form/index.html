@@ -1,0 +1,59 @@
+<!Doctype html>
+<html>
+    <head> 
+        <meta charset="utf-8"/>
+        <title> Intro HTML </title>
+    </head>
+    <body>
+        <form method="POST" action="" enctype="multipart/form-data" >
+           <fieldset>
+                <legend> Data-1 </legend>
+                Nama :
+                <input type="text" name="nama"   size="10" maxlength="2"/> <br/>
+               
+                Umur :
+                <input type="text" name="umur" placeholder="input tangal"/> <br/>
+                Password :
+                <input type="password" name="password"/> <br/>
+                Email :
+                <input type="email" name="email"/>
+                <br/>
+                Address :
+                <textarea rows="2" cols="50" name="address">
+                </textarea>
+                <br/>
+                Hobby :
+                <input type="checkbox" name="hobby[]" value="main" checked/> Main
+                <input type="checkbox" name="hobby[]" value="makan" checked/> makan
+                <input type="checkbox" name="hobby[]" value="jalan"/> 
+                Jalan-jalan
+                <br/>
+                Jenis Kelamin :
+                <input type="radio" name="jeniskelamin" checked/>Pria
+                <input type="radio" name="jeniskelamin"/>Wanita
+                <br/>
+                Kota :
+                <select name="kota">
+                    <optgroup label="Jawa">
+                        <option value="jakarta"> Jakarta</option>
+                        <option value="bandung"> Bandung</option>
+                    </optgroup>
+                    <optgroup label="Sumatera">
+                        <option value="medan"> Medan</option>
+                        <option value="pekanbaru "> pekanbaru</option>
+                     </optgroup>
+                </select>
+                <br/>
+                Warna :
+                <input type="color" name="color"/>
+                <br/>
+                photo :
+                <input type="file" name="photo" multiple accept="audio/*"/>
+            </fieldset>
+           
+            <input type="submit"/>
+            <input type="reset"/>
+        </form>
+        &nbsp; &lt; &copy; &amp; &#60; &prnsim;
+    </body>
+</html>

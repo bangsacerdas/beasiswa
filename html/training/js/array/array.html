@@ -1,0 +1,36 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<script> 
+		  var myArray = new Array(); // Array constructor (try to avoid)
+		  // is the equivalent of:
+		  var myArray = []; // Array literal (preferred way)
+		  var anotherArray = [1, 5, "string", {hello: "world"}] // Array with some elements of mixed type		
+		  myArray.push("this"); // push a string on the stack
+		  myArray.push("is", "neat", "!"); // push multiple comma separated elements, in this case 3 strings. 
+		 
+		  document.write(myArray); // prints ["this", "is", "neat", "!"]
+		 
+		  var a = myArray.pop(); // pops the last element from the stack
+		  document.write(a); // prints "!"
+		  document.write(myArray); // prints ["this", "is", "neat"]
+		 
+		  // remove n elements starting at index i from myArray, where i = 0 and n = 2 in this case.
+		  // splice(i, n, k0, k1, ..., kn) modifies myArray, returns spliced chunk as an array and optionally inserts k0-kn new elements at index i.
+		  var b = myArray.splice(0, 2); // not to be confused with slice()
+		  document.write(b); // prints ["this", "is"]
+		  document.write(myArray); // prints ["neat"]
+		 
+		  // we can also use splice to add new elements at index i
+		  myArray.splice(0, 0 ,"isn't", "this"); // remove n = 0 elements and insert "isn't" and "this" starting at index i = 0
+		  myArray.push("?"); // push "?" at the end of the stack
+		  document.write(myArray); // prints ["isn't", "this", "neat", "?"]
+		 
+		  // we could have done last two operations in one step by doing the following
+		  myArray = ["this", "is", "neat", "?"];
+		  myArray.splice(0, 2,"isn't", "this");
+		  document.write(myArray); // prints ["isn't", "this", "neat", "?"]
+		</script>
+	</body>
+</html>
